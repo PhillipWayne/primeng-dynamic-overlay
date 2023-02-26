@@ -33,11 +33,12 @@ export class AppComponent {
       ExampleOneComponent,
       this.overlayContainer
     );
-    this.overlayPanel.toggle(event, event.target);
+
+    this.overlayPanel.show(event, event.target);
   }
   hideOverlay(event: MouseEvent) {
     this.dynamicComponent = undefined;
-    this.overlayPanel.toggle(event);
+    this.overlayContainer.clear();
   }
 
   createComponent(componentType: any, viewContainerRef: ViewContainerRef): any {
