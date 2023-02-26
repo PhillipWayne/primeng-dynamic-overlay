@@ -1,0 +1,30 @@
+<div class="wrapper">
+  <button
+    pButton
+    pRipple
+    type="button"
+    label="Save"
+    icon="pi pi-check"
+    (mouseenter)="showOverlay($event)"
+    (mouseleave)="hideOverlay($event)"
+  ></button>
+
+  <button
+    pButton
+    pRipple
+    type="button"
+    label="Save"
+    icon="pi pi-check"
+    (mouseenter)="op2.toggle($event)"
+    (mouseleave)="op2.toggle($event)"
+  ></button>
+</div>
+<p-overlayPanel #overlayPanel [dismissable]="true">
+  <div #overlayContainer></div>
+</p-overlayPanel>
+
+<p-overlayPanel #op2>
+  <ng-template pTemplate>
+    <app-example-two></app-example-two>
+  </ng-template>
+</p-overlayPanel>

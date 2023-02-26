@@ -1,0 +1,14 @@
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  background-color: lightgray;
+}
+
+button {
+  margin: 20px;
+}
+
+#overlayContainer {
+  max-width: 800px;
+  max-height: 800px;
+}
